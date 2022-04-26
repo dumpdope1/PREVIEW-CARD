@@ -1,0 +1,133 @@
+/*
+
+ PRIMARY COLORS AVAILABLE
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+ NEUTRAL COLORS AVAILABLE
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+ FONT SIZE 
+
+ Font size: 15px
+
+ GOOGLE FONTS AVAILABLE
+
+ font-family: 'Inter', sans-serif;
+ font-family: 'Lexend Deca', sans-serif;
+
+*/
+body {
+    margin: 0;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main, footer, section {
+    text-align: center;
+    padding: 1.25rem;
+    border: 2px solid;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(244, 38%, 16%);
+}
+main {
+    align-content: center;
+}
+
+.mainPhoto {
+    width: 350px;
+    height: 350px;
+    float: right;      
+    margin-top: 30px;
+    position: relative;
+}
+.color-overlay {
+    width: 350px;
+    height: 350px;
+    background: hsl(277, 64%, 61%);
+    opacity: .5;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 1526px;
+}
+
+
+.tagLine {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font: bold;
+    display: inline-block;
+}
+P {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .5;
+}
+.information {
+    display: inline-block;
+
+}
+ul {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+li {
+    margin  : auto 100px;
+    position: relative;
+}
+@media screen and (max-width: 375px){
+    .mainPhoto {
+        margin-right: 20px;
+        height: 280px;
+        width: 280px;
+        display: inline-block;
+        position: relative;
+    }
+    .color-overlay {
+        height: 280px;
+        width: 280px;
+        background: hsl(277, 64%, 61%);
+        opacity: .5;
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    
+    h1 {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 400px;
+        line-height: 5rem;
+    }
+    section {
+        width: 320px;
+    }
+    .attribution {
+        font-family: 'Inter', sans-serif;
+        font-size: 10px;
+    }
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+
+}
+.violet {
+    color: hsl(277, 64%, 61%);
+}
+.attribution {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+}
